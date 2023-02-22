@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+
+    <title>Diamond</title>
+    <style>
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+ 
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#predict">Price Predict</a></li>
+
+
+            </ul>
+        </nav>
+
+
+
+        <section id="home">
+            <div>
+                <h1>DIAMOND</h1>
+            </div>
+            <div id="method-two" style="background-color:black">
+                <div style="margin:0 auto;width:50%;background-color:black">
+                    <img src="{{ url_for('static',filename='images/diamond1.jpg') }}" />
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="predict">
+            <h1>Predict Your Diamond Value </h1>
+            <p class="lead">With Our Regression Algorithm</p>
+            <a id="modelp" href="#model">PREDICT NOW</a>
+        </section>
+
+
+
+        <section id="model">
+
+    <div id="prediction">
+        
+        <form action="/predict" method="post">
+
+            <label for="carat">Carat:</label>
+            <input type="number" step="any" name="carat" placeholder="carat" id="carat" required><br>
+
+            <label for="depth">Depth:</label>
+            <input type="number" step="any" name="depth" placeholder="depth" id="depth" required><br>
+
+
+            <label for="table">Table:</label>
+            <input type="number"  step="any" name="table" placeholder="table" id="table" required><br>
+           
+
+            <label for="x">x:</label>
+            <input type="number" step="any" name="x" placeholder="x" id="x" required><br>
+            
+
+            <label for="y">y:</label>
+            <input type="number" step="any" name="y" placeholder="y" id="y" required><br>
+           
+
+            <label for="z">z:</label>
+            <input type="number" step="any" name="z" placeholder="z" id="z" required><br>
+            <br>
+            <br>
+            
+            
+           <p style="color: white; margin-bottom: 7px;"> Colour (1 - yes, 0 - no)</p> D  :
+            <input type="number" placeholder="Colour : D " max=1 min = 0 name="color_D" value = '0' required class="input" />
+            E  :  <input type="number" placeholder="Colour : D " max=1 min = 0 name="color_E" value = '0' required class="input" />
+            F  :  <input type="number" placeholder="Colour : D " max=1 min = 0 name="color_F" value = '0' required class="input" />
+            G  :  <input type="number" placeholder="Colour : D " max=1 min = 0 name="color_G" value = '0' required class="input" />
+            H  :  <input type="number" placeholder="Colour : D " max=1 min = 0 name="color_H" value = '0' required class="input" />
+            I  :  <input type="number" placeholder="Colour : D " max=1 min = 0 name="color_I" value = '0' required class="input" />
+            J  :  <input type="number" placeholder="Colour : D " max=1 min = 0 name="color_J" value = '0' required class="input" />
+             <br>
+            <br>
+            <br>
+            <br>
+
+            <p style="color: white; margin-bottom: 7px;"> Clarity (1 - yes, 0 - no)</p> I1  : <input type="number" placeholder="Clarity : I1 " max=1 min = 0 name="clarity_I1" value = '0' required class="input" />  
+             EIF  : <input type="number" placeholder="Clarity :EIF " max=1 min = 0 name="clarity_EIF" value = '0' required class="input" />
+             SI1  : <input type="number" placeholder="Clarity :SI1 " max=1 min = 0 name="clarity_SI1" value = '0' required class="input" />
+             SI2  : <input type="number" placeholder="Clarity :SI2 " max=1 min = 0 name="clarity_SI2" value = '0' required class="input" />
+             VS1  : <input type="number" placeholder="Clarity : VS1 " max=1 min = 0 name="clarity_VS1" value = '0' required class="input" />
+             VS2  : <input type="number" placeholder="Clarity : VS2 " max=1 min = 0 name="clarity_VS2" value = '0' required class="input" />
+             VVS1  : <input type="number" placeholder="Clarity : VVS1 " max=1 min = 0 name="clarity_VVS1" value = '0' required class="input" />
+             VVS2  : <input type="number" placeholder="Clarity : VVS2 " max=1 min = 0 name="clarity_VVS2" value = '0' required class="input" />
+
+
+            <br>
+            <br>
+            <br><br>
+
+
+            <button type="submit" >Predict Diamond Value</button>
+        </form>
+</div>
+     
+        </section>
+
+
+
+
+
+</body>
+
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+   
