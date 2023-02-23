@@ -6,3 +6,7 @@ Download ML Model into the directory (file was too large)
 - Built Machine Learning Model
 - Flask 
 
+---------------
+
+![img](https://github.com/bringitbackalive/Diamond/blob/main/diamond.jpg)
+![img](https://github.com/bringitbackalive/Diamond/blob/main/diamond1.jpg)
