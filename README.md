@@ -9,4 +9,4 @@ Download ML Model into the directory (file was too large)
 ---------------
 
 ![img](https://github.com/bringitbackalive/Diamond/blob/main/diamond.jpg)
-![img](https://github.com/bringitbackalive/Diamond/blob/main/diamond1.jpg)
+![img](https://github.com/bringitbackalive/Diamond/blob/main/diamond2.jpg)
